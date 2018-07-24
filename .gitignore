@@ -87,6 +87,11 @@ config.log
 *.suo
 *.user
 *.sln.docstates
+*.VC.db
+*.VC.opendb
+*.VC.db-*
+.vs/
+ipch/
 
 # Build results
 

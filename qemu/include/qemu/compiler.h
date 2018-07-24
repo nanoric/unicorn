@@ -24,11 +24,12 @@
 #endif
 #endif
 
-
+#if !defined(__cplusplus) || __cplusplus < 201100L /*since C++11, rint is in math.h*/
 static double rint( double x )
 {
     return floor(x < 0 ? x - 0.5 : x + 0.5);
 }
+#endif
 
 union MSVC_FLOAT_HACK
 {
